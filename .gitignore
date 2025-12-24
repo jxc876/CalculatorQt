@@ -1,0 +1,15 @@
+# generated files
+ui_*.py
+
+# cache
+__pycache__/
+
+# artifacts
+*.app/
+
+# ide files
+.qtcreator/
+
+# misc
+*.pyproject.user
+.DS_Store
