@@ -15,6 +15,7 @@ class MainWindow(QMainWindow):
     calculator = Calculator.Calculator()
     number_buttons = []
     operation_buttons = []
+    other_buttons = []
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -45,8 +46,15 @@ class MainWindow(QMainWindow):
             self.ui.pushButton_add,
             self.ui.pushButton_minus,
             self.ui.pushButton_mult,
-            self.ui.pushButton_div,
-            self.ui.pushButton_eq
+            self.ui.pushButton_div
+        ]
+
+        self.other_buttons= [
+            self.ui.pushButton_eq,
+            self.ui.pushButton_back,
+            self.ui.pushButton_ce,
+            self.ui.pushButton_ac,
+            self.ui.pushButton_sign
         ]
 
         # connect signals
@@ -55,6 +63,10 @@ class MainWindow(QMainWindow):
 
         # connect signals
         for button in self.operation_buttons:
+            button.clicked.connect(self.on_number_pressed)
+
+        # connect signals
+        for button in self.other_buttons:
             button.clicked.connect(self.on_number_pressed)
 
 
