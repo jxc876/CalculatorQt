@@ -1,8 +1,0 @@
-{
-    "files": [
-        "mainwindow.py",
-        "form.ui",
-        "Calculator.py",
-        "__init__"
-    ]
-}
