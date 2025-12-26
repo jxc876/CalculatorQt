@@ -1,7 +1,7 @@
 [project]
 name = "CalculatorQt"
 version = "0.1.0"
-#description = "A Basic Calculator"
+description = "A Basic Calculator"
 #requires-python = ">=3.13"
 #dependencies = [
 #  "PySide6==6.10.1"
